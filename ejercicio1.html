@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario para validar datos</title>
+  </head>
+  <body background="C:\Users\PC\Documents\html\ejercicio1\azulito.jpg">
+
+    <form action="mailto:shazil.tovar@gmail.com" method="post" enctype="text/plain" >
+    <label>Nombre:</label> <input type="text" name="nombre" value="Escribe tu nombre aquí" title="Se necesita un nombre" size="30" maxlength="100" required/>
+    <br>
+    <label>Apellido:</label> <input type="text" name="poblacion" size="20" maxlength="60" required/>
+    <br>
+    <label>Email:</label> <input type="text" name="email" size="25" maxlength="100" value="@" required/>
+    <br>
+    <label>Telefono Celular</label> <input type="text" name="telefono celular" pattern="[0-9]{10}" required/>
+    <br>
+    <label>Contraseña</label>
+    <input type="password" pattern=".{6,}"required/>
+    <br>
+
+    Cuantas veces programa?
+    <br>
+    <select name="programacion">
+    	<option value="1">Varias veces al dia
+    	<option value="2">Una vez al dia
+    	<option value="3">Varias veces a la semana
+    	<option value="4">varias veces al mes
+    </select>
+    <br>
+    <br>
+    Comentarios sobre su satisfacción pen programación
+    <br>
+    <textarea cols="30" rows="7" name="comentarios"></textarea>
+    <br>
+    <br>
+    <input type="checkbox" name="recibir_info" checked> Deseo recibir notificación sobre programación
+    <br>
+    <br>
+    <input type="submit" value="Enviar formulario">
+    <br>
+    <br>
+    <input type="Reset" value="Borrar todo">
+    </form>
+  Gracias por la información ingresada.
+
+  </body>
+  </html>
+</html>

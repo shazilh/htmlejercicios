@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+ <head leng="en">
+   <meta charset="utf-8">
+   <title>Convirtiendo a Fahrenheit o Celsius</title>
+
+ </head>
+ <body>
+   <script language="JavaScript" type="text/javascript">
+   function convertirCelsius() {
+               var fTempVal = parseFloat(document.getElementById('celsius').value);
+               var cTempVal = (fTempVal - 32) * (5/9);
+               document.getElementById('celsius').value = cTempVal;
+           }
+
+           function convertirFarenheit() {
+               var cTempVal = parseFloat(document.getElementById('farenheit').value);
+               var fTempVal = (cTempVal * (9/5)) + 32;
+               document.getElementById('farenheit').value = fTempVal;
+           }
+
+   </script>
+   <table border>
+
+    <tr>
+        <td>Fahrenheit</td>
+   <td><input name="farenheit" id="farenheit" type="text"/></td>
+
+   <td><button type="button" onclick="convertirFahrenheit()">convert to farenheit</button></td>
+    </tr>
+    <tr>
+        <td>Celsius</td>
+    <td><input name="celsius" id="celsius" type="text"/></td>
+    <td><button type="button" onclick="convertirCelsius()">convert to celsius </button></td>
+    </td>
+
+</table>
+
+ </body>
+</html>
